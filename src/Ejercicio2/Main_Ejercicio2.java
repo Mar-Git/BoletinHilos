@@ -27,6 +27,7 @@ public class Main_Ejercicio2 {
             numerosAleatorios(vector);
             Ejercicio1.CalcularEstadistica oCalculosEstadistica = new CalcularEstadistica(vector,i);
             Thread thread = new Thread(oCalculosEstadistica);
+
             thread.start();
         }
 
@@ -36,6 +37,7 @@ public class Main_Ejercicio2 {
             e.printStackTrace();
         }
         //preguntar si el hilo esta vivo
+
         //si esta vivo interrumpir
     }
 
